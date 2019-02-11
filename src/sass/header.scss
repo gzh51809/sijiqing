@@ -1,0 +1,37 @@
+.headerapp{
+    margin:0;
+    list-style:none;
+    background-color: #f5337d;
+    color: #fff;
+    padding: 0.427rem;
+    font-size: 0.768rem;
+    height:3.613333rem;
+    text-align: center;
+    li{
+        float: left;
+       
+    }
+    .header-left{
+        line-height: 2.613333rem;
+        font-size: 1.29rem;
+        width: 20%;
+        a{
+            text-decoration:none; 
+            color:#fff;
+            .header-icon{
+                position: relative;
+                top:.133333rem;
+                margin-right: .16rem;
+            }
+        }
+    }
+    .header-middle{
+        width: 65%;
+        margin-top:.366667rem;
+    }
+    .header-right{
+        line-height: 2.613333rem;
+        font-size: 1.29rem;
+        width: 15%;
+    }
+}
