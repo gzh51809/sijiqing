@@ -35,3 +35,16 @@
         width: 15%;
     }
 }
+.ant-carousel{
+    overflow: hidden;
+    box-sizing: content-box;
+    display: -ms-flexbox;
+    position: relative;
+    transition-property: transform;
+    width: 100%;
+    z-index: 1;
+    img{
+        width:100%;
+        height:11.8rem;
+    }
+}

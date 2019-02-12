@@ -1,5 +1,6 @@
 import  React, { Component } from 'react';
 import { Menu, Icon } from 'antd';
+import '../sass/mainmodule.scss';
 class Moduletab extends Component {
     constructor(){
         super();
@@ -29,19 +30,20 @@ class Moduletab extends Component {
         }
         // 改变this指向
         this.handleChange = this.handleChange.bind(this);
+       
     }
-    handleChange({item,key,selectedKeys}){
+    handleChange({key}){
         // 修改state
         this.setState({
           current:key
         })
-        console.log(this.props);
-        this.props.props.history.push(key)
-    
+        
+        this.props.props.history.push(key);
+        
       }
     render() {
       return (
-            <div className="App">
+            <div className="homeApp">
                 <Menu 
                     mode="horizontal"
                     selectedKeys={[this.state.current]}
@@ -51,9 +53,11 @@ class Moduletab extends Component {
                     this.state.menu.map(menu=>{
                         return(
                         <Menu.Item key={menu.name}>
-                            <div>
-                                <Icon type={menu.icon}/>
-                                <div className="mingzi">{menu.text}</div>
+                            <div className="itemcontent">
+                                    <Icon type={menu.icon}/>
+                                <div>
+                                    {menu.text}
+                                </div>
                             </div>
                         </Menu.Item>
                         )

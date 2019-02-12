@@ -4,7 +4,7 @@ import Home from './component/home/home';
 import Classfiy from './component/classfiy/classfiy';
 import Shoppingcart from './component/shoppingcart/shoppingcart';
 import Mine from './component/mine/mine';
-
+import Moduletab from './component/mainmodule';
 class App extends Component {
   render() {
     return (
@@ -16,6 +16,7 @@ class App extends Component {
                 <Route path="/mine" component={Mine}></Route>
                 <Redirect from="/" to="/home"></Redirect>
             </Switch>
+            <Moduletab props={this.props}></Moduletab>
         </div>
     );
   }
