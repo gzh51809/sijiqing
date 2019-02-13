@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Icon,Input,Carousel} from 'antd';
 import Homenav from './homenav';
+import Homeqiang from './homeqianggou';
 // import axios from 'axios';
 import '../../sass/header.scss';
 class Home extends Component{
@@ -82,6 +83,7 @@ class Home extends Component{
                     }
                 </Carousel>
                 <Homenav></Homenav>
+                <Homeqiang></Homeqiang>
             </div>
         )
     }

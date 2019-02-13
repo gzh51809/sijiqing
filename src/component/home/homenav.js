@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import {Icon,Input,Carousel} from 'antd';
 // import axios from 'axios';
-import '../../sass/homenav.scss';
+// import '../../sass/homenav.scss';
 class Homenav extends Component{
     constructor(){
         super();
@@ -48,11 +48,10 @@ class Homenav extends Component{
                                                 <img src={item.image}/>
                                             </i>
                                         </div>
-                                        <p>{item.text}}</p>
+                                        <p>{item.text}</p>
                                     </li>
                         })
                     }
-                    
                 </ul>
         )
     }
