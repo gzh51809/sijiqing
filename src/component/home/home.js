@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Icon,Input,Carousel} from 'antd';
 import Homenav from './homenav';
 import Homeqiang from './homeqianggou';
+import Homestar from './homestar';
+import Homeseasons from './homeseasons';
 // import axios from 'axios';
 import '../../sass/header.scss';
 class Home extends Component{
@@ -48,7 +50,7 @@ class Home extends Component{
         const { userName } = this.state;
         const suffix = userName ? <Icon type="close-circle" onClick={this.emitEmpty} /> : null;
         return (
-            <div>
+            <div className="homeapp">
                 <ul className="headerapp">
                     <li className="header-left">
                         <a href="#">
@@ -84,6 +86,9 @@ class Home extends Component{
                 </Carousel>
                 <Homenav></Homenav>
                 <Homeqiang></Homeqiang>
+                <Homestar></Homestar>
+                <Homeseasons></Homeseasons>
+
             </div>
         )
     }

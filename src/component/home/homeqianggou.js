@@ -13,8 +13,14 @@ class Homeqiang extends Component{
 
     render(){
         return (
-            <div className="navqianggou">
-                <img src="http://www.sjq.cn/mojivue/static/images/active-reword-redbag.jpg"/>
+            <div className="navqiang">
+                <div className="navqianggou">
+                    <img src="http://www.sjq.cn/mojivue/static/images/active-reword-redbag.jpg"/>
+                </div>
+                <div className="redrecommend">
+                    <span className="recommend">网红推荐</span>
+                    <a href="javascript:;" className="moreto">更多></a>
+                </div>
             </div>
         )
     }

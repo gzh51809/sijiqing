@@ -1,87 +1,187 @@
-.headerapp{
-    margin:0;
-    list-style:none;
-    background-color: #f5337d;
-    color: #fff;
-    padding: 0.427rem;
-    font-size: 0.768rem;
-    height:3.613333rem;
-    text-align: center;
-    li{
-        float: left;
-       
-    }
-    .header-left{
-        line-height: 2.613333rem;
-        font-size: 1.29rem;
-        width: 20%;
-        a{
-            text-decoration:none; 
-            color:#fff;
-            .header-icon{
-                position: relative;
-                top:.133333rem;
-                margin-right: .16rem;
-            }
-        }
-    }
-    .header-middle{
-        width: 65%;
-        margin-top:.366667rem;
-    }
-    .header-right{
-        line-height: 2.613333rem;
-        font-size: 1.29rem;
-        width: 15%;
-    }
-}
-.navtab{
-    list-style:none;
-    padding:0;
-    margin:0;
-    padding-top: 0.64rem;
-    background: #fff;
-    display: flex;
-    .navitem{
-        width: 25%;
-        float: left;
+.homeapp{
+    background:#f6f6f6;
+    .headerapp{
+        margin:0;
+        list-style:none;
+        background-color: #f5337d;
+        color: #fff;
+        padding: 0.427rem;
+        font-size: 0.768rem;
+        height:3.613333rem;
         text-align: center;
-        margin-bottom: 0.64rem;
-        .navimg{
-            .navicon{
-                width:2.846rem;
-                height: 3.046rem;
-                background-size: 100% 100%;
-                display: inline-block;
-                img{
-                    width: 100%;
+        li{
+            float: left;
+           
+        }
+        .header-left{
+            line-height: 2.613333rem;
+            font-size: 1.29rem;
+            width: 20%;
+            a{
+                text-decoration:none; 
+                color:#fff;
+                .header-icon{
+                    position: relative;
+                    top:.133333rem;
+                    margin-right: .16rem;
                 }
             }
         }
-        p{
-            color: #666666;
-            font-size: 0.469rem;
-            margin-top: 0.256rem;
+        .header-middle{
+            width: 65%;
+            margin-top:.366667rem;
+        }
+        .header-right{
+            line-height: 2.613333rem;
+            font-size: 1.29rem;
+            width: 15%;
         }
     }
-}
-.ant-carousel{
-    overflow: hidden;
-    box-sizing: content-box;
-    display: -ms-flexbox;
-    position: relative;
-    transition-property: transform;
-    width: 100%;
-    z-index: 1;
-    img{
-        width:100%;
+    .ant-carousel{
         height:11.8rem;
     }
+    .navtab{
+        list-style:none;
+        padding:0;
+        margin:0;
+        padding-top: 0.64rem;
+        background: #fff;
+        display: flex;
+        .navitem{
+            width: 25%;
+            float: left;
+            text-align: center;
+            margin-bottom: 0.64rem;
+            .navimg{
+                .navicon{
+                    width:2.846rem;
+                    height: 3.046rem;
+                    background-size: 100% 100%;
+                    display: inline-block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            p{
+                color: #666666;
+                font-size: 0.469rem;
+                margin-top: 0.256rem;
+            }
+        }
+    }
+    .ant-carousel{
+        overflow: hidden;
+        box-sizing: content-box;
+        display: -ms-flexbox;
+        position: relative;
+        transition-property: transform;
+        width: 100%;
+        z-index: 1;
+        img{
+            width:100%;
+            height:11.8rem;
+        }
+    }
+    .navqianggou{
+       
+        img{
+            display:flex;
+            width:100%;
+        }
+    }
+    .redrecommend{
+        height: 2.8rem;
+        background: #fff;
+        padding: 0.8rem;
+        .recommend{
+            float:left;
+            color:#333;
+        }
+        .moreto{
+            float:right;
+            font-size: 0.512rem;
+            color: #999;
+            text-decoration: none;
+        }
+    }
+    .starModule{
+        margin-top: 0.666rem;
+        background: #fff;
+        overflow: hidden;
+        .starrecommend{
+            height: 2.8rem;
+            background: #fff;
+            padding: 0.8rem;
+            .recommend{
+                float:left;
+                color:#333;
+            }
+            .moreto{
+                float:right;
+                font-size: 0.512rem;
+                color: #999;
+                text-decoration: none;
+            }
+        }
+        .starcarousel{
+            padding: 0rem 0.896rem;
+            text-align: center;
+            .starlist{
+                background: #fff;
+                overflow: hidden;
+                box-sizing: content-box;
+                display: flex;
+                position: relative;
+                transition-property: transform;
+                width: 100%;
+                z-index: 1;
+                .staritem{
+                    // transform: translate(100px);
+                    padding-left:0;
+                    list-style:none;
+                    box-sizing: content-box;
+                    display: flex;
+                    height: 100%;
+                    position: relative;
+                    
+                    width: 100%;
+                    z-index: 1;
+                    .item-star{
+                        color: #333;
+                        width: 8.42rem;
+                        margin-right: .332rem;
+                        align-items: center;
+                        flex-shrink: 0;
+                        font-size: .213333rem;
+                        justify-content: center;
+                        padding: .04rem 0;
+                        position: relative;   
+                    }
+                }
+            }
+        }
+    }
+    .seasons{
+        height:500px;
+    }
 }
-.navqianggou{
-   
+
+.swiper-slide {
+    width: 130px !important;
+    margin-right: 8px !important;
     img{
-        display:flex;
         width:100%;
+        height: 8.88rem;
+        float: left;
+    }
+    p{
+        margin-bottom:0;
+        font-size: .555rem;
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
     }
 }
