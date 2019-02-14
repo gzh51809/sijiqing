@@ -140,20 +140,12 @@ class Homestar extends Component{
                                                     <p>{item.goods_name}</p>
                                                     <p>￥{item.shop_price}</p>
                                                 </div>
-                                            </div>;
-                                            
-                                            
+                                            </div>;       
                                 })
                             }
-                            <div>
-                                
-                            </div>
                         </div>
  
-                    </div>
-                            <ul className="staritem">
-                            
-                            </ul>
+                        </div>
                         </div>
                     </div>
                 </div>
